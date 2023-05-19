@@ -41,5 +41,7 @@ export default {
 body {
   background-color: grey;
   font-family: "Roboto Condensed", sans-serif;
+  height: 100vh;
+  overflow-y: auto;
 }
 </style>
