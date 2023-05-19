@@ -90,15 +90,16 @@ export default {};
       width: 100%;
       display: flex;
       color: grey;
+      font-size: 0.85em;
       font-weight: 300;
 
       ul {
         list-style-type: none;
-        margin-right: 3.5em;
+        margin-right: 4.5em;
       }
 
       li {
-        margin-bottom: 0.3em;
+        margin-bottom: 0.5em;
         &:hover {
           color: white;
           cursor: pointer;
@@ -108,6 +109,7 @@ export default {};
       h2 {
         margin-bottom: 0.5em;
         color: white;
+        font-size: 2em;
       }
 
       img {
@@ -147,6 +149,17 @@ export default {};
       &:hover {
         background-color: #003c80;
         cursor: pointer;
+      }
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+
+      h2 {
+        color: #258bff;
+        margin-right: 0.5em;
       }
     }
   }
