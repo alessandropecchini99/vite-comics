@@ -14,6 +14,8 @@ export default {};
 .body {
   height: 40vh;
   background-color: #1c1c1c;
+  position: relative;
+  z-index: 100;
   .container {
     width: 80%;
     height: 100%;

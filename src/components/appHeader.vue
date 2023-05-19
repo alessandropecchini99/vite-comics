@@ -32,6 +32,7 @@ $DC_color: #0c7cec;
 .body {
   height: 10vh;
   background-color: white;
+  z-index: 90;
 
   .container {
     height: 100%;
@@ -49,6 +50,10 @@ $DC_color: #0c7cec;
 
     img {
       height: 75%;
+      border-radius: 90%;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -69,6 +74,7 @@ $DC_color: #0c7cec;
         &:hover {
           color: $DC_color;
           border-bottom: 5px $DC_color solid;
+          cursor: pointer;
         }
       }
     }
