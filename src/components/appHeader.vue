@@ -3,10 +3,10 @@ export default {};
 </script>
 
 <template>
-  <div class="body">
+  <div class="section">
     <div class="container">
       <div class="logo">
-        <img src="/public/img/dc-logo.png" alt="logo" />
+        <img src="/src/assets/img/dc-logo.png" alt="logo" />
       </div>
       <div class="navbar">
         <ul>
@@ -27,17 +27,16 @@ export default {};
 </template>
 
 <style lang="scss" scoped>
+@use "./../assets/styles/variables.scss" as *;
 $DC_color: #0c7cec;
 
-.body {
-  height: 10vh;
+.section {
+  height: 110px;
   background-color: white;
   z-index: 90;
 
   .container {
-    height: 100%;
-    width: 80%;
-    margin-inline: auto;
+    @include myContainer;
     display: flex;
     justify-content: space-between;
     align-items: center;

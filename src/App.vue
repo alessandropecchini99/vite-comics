@@ -1,11 +1,12 @@
 <script>
 import appHeader from "./components/appHeader.vue";
+import appJumbo from "./components/appJumbo.vue";
 import appMain from "./components/appMain.vue";
 import appIcon from "./components/appIcon.vue";
 import appFooter from "./components/appFooter.vue";
 
 export default {
-  components: { appHeader, appMain, appFooter, appIcon },
+  components: { appHeader, appJumbo, appMain, appIcon, appFooter },
 };
 </script>
 
@@ -14,6 +15,10 @@ export default {
     <header>
       <appHeader />
     </header>
+
+    <section>
+      <appJumbo />
+    </section>
 
     <main>
       <appMain />
@@ -30,18 +35,5 @@ export default {
 </template>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
-
-body {
-  background-color: grey;
-  font-family: "Roboto Condensed", sans-serif;
-  height: 100vh;
-  overflow-y: auto;
-}
+@use "./assets/styles/general.scss" as *;
 </style>

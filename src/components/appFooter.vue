@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <div class="sezione_1">
+  <div class="section_1">
     <div class="container_1">
       <div class="colonne">
         <div class="colonna">
@@ -52,45 +52,45 @@ export default {};
             <li>DC Power Visa</li>
           </ul>
         </div>
-        <img src="/public/img/dc-logo-bg.png" alt="logo" />
+        <img src="/src/assets/img/dc-logo-bg.png" alt="logo" />
       </div>
     </div>
   </div>
-  <div class="sezione_2">
+  <div class="section_2">
     <div class="container_2">
       <button><h2>SIGN-UP NOW!</h2></button>
       <div class="icon">
         <h2>FOLLOW US</h2>
-        <img src="/public/img/footer-facebook.png" alt="facebook" />
-        <img src="/public/img/footer-twitter.png" alt="twitter" />
-        <img src="/public/img/footer-youtube.png" alt="youtube" />
-        <img src="/public/img/footer-pinterest.png" alt="pinterest" />
-        <img src="/public/img/footer-periscope.png" alt="periscope" />
+        <img src="/src/assets/img/footer-facebook.png" alt="facebook" />
+        <img src="/src/assets/img/footer-twitter.png" alt="twitter" />
+        <img src="/src/assets/img/footer-youtube.png" alt="youtube" />
+        <img src="/src/assets/img/footer-pinterest.png" alt="pinterest" />
+        <img src="/src/assets/img/footer-periscope.png" alt="periscope" />
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.sezione_1 {
-  background-image: url(/public/img/footer-bg.jpg);
+@use "./../assets/styles/variables.scss" as *;
+
+.section_1 {
+  background-image: url(/src/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 350px;
 
   .container_1 {
-    height: 100%;
-    width: 80%;
-    margin-inline: auto;
-    position: relative;
+    @include myContainer;
     display: flex;
     align-items: center;
+    position: relative;
 
     .colonne {
       width: 100%;
       display: flex;
       color: grey;
-      font-size: 0.85em;
+      font-size: 0.9em;
       font-weight: 300;
 
       ul {
@@ -100,6 +100,7 @@ export default {};
 
       li {
         margin-bottom: 0.5em;
+        font-size: 0.8em;
         &:hover {
           color: white;
           cursor: pointer;
@@ -113,10 +114,11 @@ export default {};
       }
 
       img {
+        height: 420px;
         z-index: 0;
         position: absolute;
-        right: 135px;
-        top: -90px;
+        right: 100px;
+        top: -40px;
       }
 
       .colonna {
@@ -127,16 +129,14 @@ export default {};
     }
   }
 }
-.sezione_2 {
-  height: 10vh;
+.section_2 {
+  height: 100px;
   background-color: #303030;
   position: relative;
   z-index: 100;
 
   .container_2 {
-    height: 100%;
-    width: 80%;
-    margin-inline: auto;
+    @include myContainer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +145,7 @@ export default {};
       background-color: #303030;
       color: white;
       padding: 10px;
-      border: 2px solid #1f6cc4;
+      border: 2px solid #0c7cec;
       &:hover {
         background-color: #003c80;
         cursor: pointer;
@@ -158,7 +158,7 @@ export default {};
       gap: 1em;
 
       h2 {
-        color: #258bff;
+        color: #0c7cec;
         margin-right: 0.5em;
       }
     }
