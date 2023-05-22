@@ -68,6 +68,7 @@ export default {};
       display: flex;
       align-items: center;
       color: white;
+      padding-inline: 0.5em;
 
       .img_1 {
         width: 70px;
@@ -78,7 +79,7 @@ export default {};
       }
 
       p {
-        margin-left: 1em;
+        margin-left: 0.5em;
       }
     }
   }

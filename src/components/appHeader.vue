@@ -1,5 +1,27 @@
 <script>
-export default {};
+import propMenu from "./navbarVoice.vue";
+
+export default {
+  data() {
+    return {
+      arrMenuVoice: [
+        `CHARACTERS`,
+        `COMIC`,
+        `MOVIES`,
+        `TV`,
+        `GAMES`,
+        `COLLECTIBLES`,
+        `VIDEOS`,
+        `FANS`,
+        `NEWS`,
+        `SHOP`,
+      ],
+    };
+  },
+  components: {
+    propMenu,
+  },
+};
 </script>
 
 <template>
@@ -10,16 +32,7 @@ export default {};
       </div>
       <div class="navbar">
         <ul>
-          <li>CHARACTERS</li>
-          <li>COMICS</li>
-          <li>MOVIES</li>
-          <li>TV</li>
-          <li>GAMES</li>
-          <li>COLLECTIBILES</li>
-          <li>VIDEOS</li>
-          <li>FANS</li>
-          <li>NEWS</li>
-          <li>SHOP</li>
+          <propMenu v-for="nav in arrMenuVoice" :key="nav" :menuVoice="nav" />
         </ul>
       </div>
     </div>
@@ -65,17 +78,6 @@ $DC_color: #0c7cec;
       list-style-type: none;
       gap: 1.5em;
       font-weight: 400;
-
-      li {
-        display: flex;
-        align-items: center;
-
-        &:hover {
-          color: $DC_color;
-          border-bottom: 5px $DC_color solid;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
