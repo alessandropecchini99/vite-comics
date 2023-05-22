@@ -118,7 +118,7 @@ export default {};
         z-index: 0;
         position: absolute;
         right: 100px;
-        top: -40px;
+        top: -30px;
       }
 
       .colonna {

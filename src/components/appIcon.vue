@@ -53,8 +53,10 @@ export default {};
 @use "./../assets/styles/variables.scss" as *;
 
 .section {
-  height: 120px;
+  height: 160px;
   background-color: #0c7cec;
+  position: relative;
+  z-index: 100;
 
   .container {
     @include myContainer;
